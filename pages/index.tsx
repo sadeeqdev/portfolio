@@ -34,8 +34,8 @@ const Home: NextPage = () => {
 
       {/* <!-----Welcome bar--------------------------------------------------------------------------------> */}
         
-        <div className='w-11/12 lg:w-11/12 xl:w-5/6 2xl:w-3/5 lg:mt-10 xl:mt-20 mx-auto lg:flex justify-between '>
-          <div className='text-sub-white text-6xl lg:text-7xl xl:text-8xl pt-10 font-medium '>
+        <div className='w-11/12 lg:w-11/12 xl:w-5/6 2xl:w-3/5 mt-14 xl:mt-35 mx-auto lg:flex justify-between '>
+          <div className='text-sub-white text-6xl lg:text-7xl xl:text-8xl pt-6 font-medium '>
             Hi! I am<br/>
             <span className='text-white'>Abubakar<br/>
             Ibrahim,<br/>

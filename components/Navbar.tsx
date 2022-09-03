@@ -1,16 +1,13 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
-
-
 const Navbar = () => {
   const [show, setShow] = useState<boolean>(false);
-    const [mobile, setMobile] = useState<boolean>(false)
-
+  const [mobile, setMobile] = useState<boolean>(false)
+  const [scrolled, setScrolled] = useState(false);
     function handleShow(){
         setShow(!show)
     }
-
 
     function handleClose(){
       setShow(false)
@@ -39,9 +36,19 @@ const Navbar = () => {
       }
     },[])
 
+     useEffect(() => {
+      window.onscroll = function () {
+        if (window.scrollY > 50) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      };
+    }, []);
+
   return (
     <>
-    <div onClick={() => setShow(false)} className='w-full bg-grey z-40 delay-100 scroll-y-hidden fixed h-screen backdrop-filter -ml-1/1 transition-all backdrop-blur-sm bg-opacity-10' style={{transform:(mobile && show)  && 'translateX(100%)'}}>
+    <div onClick={() => setShow(false)} className='w-full top-0 bg-grey z-40 delay-100 scroll-y-hidden fixed h-screen backdrop-filter -ml-1/1 transition-all backdrop-blur-sm bg-opacity-10' style={{transform:(mobile && show)  && 'translateX(100%)'}}>
     <div className='fixed w-72 -ml-72 bg-grey h-screen transition-all delay-100' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)'}}>
       <div className=' text-white pt-6 px-2 pb-7 w-11/12  lg:pt-28 lg:py-7 lg:w-5/6 2xl:w-4/6 mx-auto grid grid-cols-1'>
           <div className='text-2xl font-medium lg:text-xl flex justify-between'>
@@ -105,10 +112,10 @@ const Navbar = () => {
       </div>
     </div>
     </div>
-     <div className='lg:border-b-1 border-sub-white h-15 lg:h-20 flex items-center text-white '>
+     <div className='lg:border-b-1 border-sub-white bg-black h-15 lg:h-20 fixed w-full mt-0 z-30 top-0 flex items-center text-white ' style={{borderBottom:(mobile && scrolled) && '1px solid #333'}}>
         <div className='w-11/12 xl:w-5/6 2xl:w-3/5  mx-auto flex flex-row justify-between items-center'>
           <div className='text-2xl font-medium lg:text-xl'>
-            Sadeeq.<span className='text-sub-white font-normal  '>dev</span>
+            Sadeeq.<span className='text-sub-white font-normal'>dev</span>
           </div>
           <div className='hidden lg:flex space-x-7 text-lg text-sub-white'>
             <button className='hover:text-white'>
