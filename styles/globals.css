@@ -4,8 +4,26 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: (100%, 100%);
+    background-color: black;
+    overflow-x: hidden
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.noScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.noScrollBar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -15,12 +33,34 @@ a {
   box-sizing: border-box;
 }
 
+.fa-secondary {
+  opacity: .4;
+  color: green
+}
+
+.gradBg {
+  background:
+    linear-gradient(117deg,
+      hsl(0, 0%, 7%) 0%,
+      hsl(0, 0%, 6.98%) 8.5%,
+      hsl(0, 0%, 6.93%) 17.1%,
+      hsl(0, 0%, 6.85%) 25.8%,
+      hsl(0, 0%, 6.73%) 34.4%,
+      hsl(0, 0%, 6.57%) 42.8%,
+      hsl(0, 0%, 6.38%) 51%,
+      hsl(0, 0%, 6.14%) 58.9%,
+      hsl(0, 0%, 5.86%) 66.4%,
+      hsl(0, 0%, 5.53%) 73.4%,
+      hsl(0, 0%, 5.14%) 79.9%,
+      hsl(0, 0%, 4.68%) 85.6%,
+      hsl(0, 0%, 4.12%) 100.0%);
+  background-position: center;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
     color: white;
-    background: black;
   }
 }
