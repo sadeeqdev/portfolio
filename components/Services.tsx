@@ -3,13 +3,13 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div className='border-t-1 border-sub-white my-30'>
+    <div className='border-t-1 border-sub-white my-30' data-aos="fade-up">
         <div className='w-11/12 xl:w-5/6 2xl:w-3/5  mx-auto'>
           <div className='text-4xl mt-15 text-white font-medium'>
             Services
           </div>
           <div className='text-white text-xl mt-4 flex flex-col lg:flex-row justify-between lg:space-x-7 xl:space-x-10'>
-            <div className='w-full lg:h-160 xl:h-150 rounded-lg bg-grey mt-7 p-3 xl:p-5'>
+            <div className='w-full lg:h-160 xl:h-150 rounded-lg bg-grey mt-7 p-3 xl:p-5' data-aos="fade-up" data-aos-delay="20">
                 <div className='h-20 w-20 rounded-full bg-black flex justify-center items-center'>
                     <Image src={`/assets/design-icon.svg`} width="40px" height="50px" alt="bgasdw"/>
                 </div>
@@ -24,7 +24,7 @@ const Services = () => {
                     looking for. You are in the right place.
                   </div>
               </div>
-              <div className='w-full lg:h-160 xl:h-150 rounded-lg bg-grey mt-7 p-3 xl:p-5'>
+              <div className='w-full lg:h-160 xl:h-150 rounded-lg bg-grey mt-7 p-3 xl:p-5' data-aos="fade-up" data-aos-delay="100">
                 <div className='h-20 w-20 rounded-full bg-black flex justify-center items-center'>
                     <Image src={`/assets/coding-icon.svg`} width="40px" height="50px" alt="bgasdw"/>
                 </div>
@@ -38,7 +38,7 @@ const Services = () => {
                     Testing and Optimization.
                   </div>
               </div>
-              <div className='w-full lg:h-160 xl:h-150 rounded-lg bg-grey mt-7 p-3 xl:p-5'>
+              <div className='w-full lg:h-160 xl:h-150 rounded-lg bg-grey mt-7 p-3 xl:p-5' data-aos="fade-up" data-aos-delay="200">
                 <div className='h-20 w-20 rounded-full bg-black flex justify-center items-center'>
                     <Image src={`/assets/seo-icon.svg`} width="40px" height="50px" alt="bgasdw"/>
                 </div>

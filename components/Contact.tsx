@@ -8,10 +8,10 @@ const Contact = () => {
                 Contact Me
             </div>
             <div className='text-white text-xl mt-10 lg:mt-20 flex flex-col lg:flex-row lg:space-x-15 justify-between'>
-                <div className='text-sub-white leading-normal text-3xl lg:(text-5xl leading-relaxed mt-5) xl:(text-6xl leading-normal mt-0)'>
+                <div className='text-sub-white leading-normal text-3xl lg:(text-5xl leading-relaxed mt-5) xl:(text-6xl leading-normal mt-0)' data-aos="zoom-in" data-aos-delay="50">
                     Thanks for taking the time to reach out. How can I help you today?
                 </div>
-                <div className='lg:float-right lg:w-120 xl:w-150 mt-10 lg:mt-0'>
+                <div className='lg:float-right lg:w-120 xl:w-150 mt-10 lg:mt-0' data-aos="fade-left" data-aos-delay="100">
                     <input type="text" className='border border-sub-white bg-grey text-white py-4 px-3 rounded w-full lg:w-120 xl:w-150' placeholder='Full Name'/>
                     <input type="text" className='border border-sub-white bg-grey text-white py-4 px-3 mt-5 rounded w-full lg:w-120 xl:w-150' placeholder='Email'/>
                     <textarea className='border border-sub-white bg-grey text-white h-60 p-4 px-3 mt-5 rounded w-full lg:w-120 xl:w-150' placeholder='Description'/>

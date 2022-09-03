@@ -3,7 +3,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='gradBg w-11/12 xl:w-5/6 2xl:w-3/5 p-3 mt-20 h-auto lg:p-10 xl:p-20 rounded-lg mx-auto backdrop-blur-lg bg-opacity-70'>
+    <div className='gradBg w-11/12 xl:w-5/6 2xl:w-3/5 p-3 mt-20 h-auto lg:p-10 xl:p-20 rounded-lg mx-auto backdrop-blur-lg bg-opacity-70' data-aos="fade-up">
           <div className='flex text-white flex flex-col lg:flex-row justify-between'>
             <div className='text-sub-white font-bold text-4xl lg:text-5xl'><span className='text-white'>About</span> Me</div>
             <div className='text-xl mt-2 lg:(text-3xl mt-0) font-medium  xl:font-bold text-sub-white'>
@@ -11,7 +11,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className='flex mt-7 lg:mt-15 text-white flex flex-col lg:flex-row justify-between '>
+          <div className='flex mt-7 lg:mt-15 text-white flex flex-col lg:flex-row justify-between' data-aos="fade-up" data-aos-delay="200">
             <div className='w-auto h-auto  rounded-lg'>
                 <Image src={`/assets/me.jpg`} width="350px" height="380px"  className="rounded-lg" alt="bgasdw"/>
             </div>
@@ -25,7 +25,7 @@ const About = () => {
                 With over 4 years in commercial application and software development, I can be relied upon to achieve your goals.
             </div>
           </div>
-          <div className='flex flex-col lg:flex-row h-auto lg:h-45 w-full mx-auto bg-grey mt-15 rounded text-white flex lg:justify-between lg:items-center lg:space-x-20 p-5'>
+          <div className='flex flex-col lg:flex-row h-auto lg:h-45 w-full mx-auto bg-grey mt-15 rounded text-white flex lg:justify-between lg:items-center lg:space-x-20 p-5' data-aos="fade-up">
             <div className='text-6xl lg:(text-9xl) font-bold'>
                 20<sup className='font-light text-5xl lg:(text-8xl) text-red'>+</sup>
             </div>
