@@ -15,21 +15,23 @@ const About = () => {
             <div className='w-auto h-auto  rounded-lg'>
                 <Image src={`/assets/me.jpg`} width="350px" height="380px"  className="rounded-lg" alt="bgasdw"/>
             </div>
-            <div className='text-2xl w-11/12 lg:w-2/4 mt-6 lg:mt-0 font-bold text-sub-white float-right text-justify'>
-                I am a seasoned software expert who has developed products for enterprise clients such as 
-                Intuit, Yale University, and Hewlett-Packard (HP), as well as many venture-backed businesses. 
+            <div className='text-2xl w-1/1 lg:w-3/5 mt-6 lg:mt-0 font-bold text-sub-white float-right text-justify'>
+                I am a seasoned software deveoper who has developed products for enterprise clients,
+                 as well as many venture-backed businesses. 
                 I specialize in building applications specific to the business needs of my clients. 
                 I have done work in software development, mobile app creation, front-end/back-end web, 
-                database/server management, graphic design, and video game development.
+                database/server management and graphic design.
+                I am proficienct in Technologies such as Javascript, Typescript, React JS, Vue JS Node JS and C#.
+                With over 4 years in commercial application and software development, I can be relied upon to achieve your goals.
             </div>
           </div>
           <div className='flex flex-col lg:flex-row h-auto lg:h-45 w-full mx-auto bg-grey mt-15 rounded text-white flex lg:justify-between lg:items-center lg:space-x-20 p-5'>
             <div className='text-6xl lg:(text-9xl) font-bold'>
-                15<sup className='font-light text-5xl lg:(text-8xl) text-red'>+</sup>
+                20<sup className='font-light text-5xl lg:(text-8xl) text-red'>+</sup>
             </div>
-            <div className='text-lg'>
-                <p className='text-3xl my-2 lg:mt-0 font-medium'>PROJECTS COMPLETED</p>
-                Over the past ten years, I have completed over 100 software projects including iOS/Android apps, Mac/Windows programs, Unity/Unreal video games, and web apps.
+            <div className='text-xl text-sub-white'>
+                <p className='text-3xl my-2 lg:mt-0 font-medium text-white'>PROJECTS COMPLETED</p>
+                Over the past 4 years, I have completed over 20 software projects including Progressive Web Apps, , Defi Apps and Windows programs.
             </div>
           </div>
           <div className='mx-auto text-red flex justify-center py-6 lg:py-0 lg:mt-10 text-xl lg:text-2xl'>

@@ -6,7 +6,7 @@ export default defineConfig({
       'white': '#fff',
       'black': '#000',
       'dark':'#151515',
-      'sub-white':'#777',
+      'sub-white':'#888',
       'sub-dark': '#0F0E0E',
       'grey':'#161616',
       'purple-dark':'#2D132C',

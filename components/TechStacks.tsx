@@ -8,9 +8,8 @@ const TechStacks = () => {
           <div className='text-4xl mt-15 text-white font-medium'>
             Tech Stacks 
           </div>
-          <div className='text-white text-xl mt-4'>
-            We are experts in setting up MEAL, Data Management and Educational Platforms; and much more!<br/><br/>
-            As humanitarians & social innovators, we have dedicated the last 20 years to support the digital transformation of humanitarian and development organizations.
+          <div className='text-white text-2xl text-sub-white mt-4'>
+            As an experienced software developer, I have dedicated the last 4 years in delivering modern, reliable and scalable websites using the appropriate technology stacks. 
           </div>
           <div className='text-white text-xl mt-11 flex-wrap lg:flex-nowrap flex justify-between gap-y-2 gap-x-2 lg:(gap-y-0 gap-x-0) lg:space-x-4'>
             <div className='w-max flex-grow h-20 lg:h-30 rounded-lg bg-color-5 p-2 lg:p-2 lg:p-5 flex items-center'>

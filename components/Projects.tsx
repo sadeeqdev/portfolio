@@ -19,7 +19,7 @@ const Projects = () => {
                     </button>
                   </div>
                   <Image 
-                    src={'/assets/img-5.png'} 
+                    src={'/assets/img-6.png'} 
                     layout="fill" 
                     alt="netporch" 
                     className="rounded-lg -mt-102 transition-all hover:(opacity-10 cursor-pointer)" 
@@ -49,7 +49,7 @@ const Projects = () => {
                     </button>
                   </div>
                   <Image 
-                    src={'/assets/img-5.png'} 
+                    src={'/assets/img-2.png'} 
                     layout="fill" 
                     alt="netporch" 
                     className="rounded-lg -mt-102 transition-all hover:(opacity-10 cursor-pointer)" 
@@ -64,7 +64,7 @@ const Projects = () => {
                     </button>
                   </div>
                   <Image 
-                    src={'/assets/img-5.png'} 
+                    src={'/assets/img-4.png'} 
                     layout="fill" 
                     alt="netporch" 
                     className="rounded-lg -mt-102 transition-all hover:(opacity-10 cursor-pointer)" 
@@ -79,7 +79,7 @@ const Projects = () => {
                     </button>
                   </div>
                   <Image 
-                    src={'/assets/img-5.png'} 
+                    src={'/assets/img-7.png'} 
                     layout="fill" 
                     alt="netporch" 
                     className="rounded-lg -mt-102 transition-all hover:(opacity-10 cursor-pointer)" 
@@ -94,7 +94,7 @@ const Projects = () => {
                     </button>
                   </div>
                   <Image 
-                    src={'/assets/img-5.png'} 
+                    src={'/assets/img-1.png'} 
                     layout="fill" 
                     alt="netporch" 
                     className="rounded-lg -mt-102 transition-all hover:(opacity-10 cursor-pointer)" 
@@ -109,7 +109,7 @@ const Projects = () => {
                     </button>
                   </div>
                   <Image 
-                    src={'/assets/img-5.png'} 
+                    src={'/assets/img-3.png'} 
                     layout="fill" 
                     alt="netporch" 
                     className="rounded-lg -mt-102 transition-all hover:(opacity-10 cursor-pointer)" 

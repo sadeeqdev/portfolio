@@ -2,13 +2,13 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='border-t-1 border-sub-white my-30'>
+    <div className='border-t-1 border-sub-white mt-30 mb-15 lg:mb-20'>
         <div className='w-11/12 xl:w-5/6 2xl:w-3/5  mx-auto'>
             <div className='text-4xl mt-15 text-white font-medium'>
                 Contact Me
             </div>
             <div className='text-white text-xl mt-10 lg:mt-20 flex flex-col lg:flex-row lg:space-x-15 justify-between'>
-                <div className='text-white text-3xl lg:(text-5xl leading-relaxed mt-10) xl:text-6xl leading-normal'>
+                <div className='text-sub-white leading-normal text-3xl lg:(text-5xl leading-relaxed mt-5) xl:(text-6xl leading-normal mt-0)'>
                     Thanks for taking the time to reach out. How can I help you today?
                 </div>
                 <div className='lg:float-right lg:w-120 xl:w-150 mt-10 lg:mt-0'>

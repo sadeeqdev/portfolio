@@ -40,7 +40,7 @@ const Home: NextPage = () => {
             <span className='text-white'>Abubakar<br/>
             Ibrahim,<br/>
             </span>
-            A Frontend<br/> Developer<br/>
+            A Software<br/> Developer<br/>
           </div>
           <div className='text-white text-8xl font-medium '>
            <GlassCardBanner/>
