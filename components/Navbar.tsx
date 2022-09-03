@@ -2,10 +2,10 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-     <div className='border-b-1 border-sub-white h-20 flex items-center text-white '>
-        <div className='w-11/12 xl:w-5/6 2xl:w-3/5  mx-auto flex flex-row justify-between '>
-          <div className=' text-xl'>
-            Sadeeq.<span className='text-sub-white'>dev</span>
+     <div className='lg:border-b-1 border-sub-white h-15 lg:h-20 flex items-center text-white '>
+        <div className='w-11/12 xl:w-5/6 2xl:w-3/5  mx-auto flex flex-row justify-between items-center'>
+          <div className='text-2xl font-medium lg:text-xl'>
+            Sadeeq.<span className='text-sub-white font-normal  '>dev</span>
           </div>
           <div className='hidden lg:flex space-x-7 text-lg text-sub-white'>
             <button className='hover:text-white'>
@@ -30,6 +30,9 @@ const Navbar = () => {
               <svg xmlns="http://www.w3.org/2000/svg" style={{height:'30px'}} viewBox="0 0 448 512"><path fill='#fff' d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
             </a>
           </div>
+          <button className='lg:hidden'>
+            <svg fill="#fff" style={{width:'27px'}} xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+          </button>
         </div>
       </div>
   )
