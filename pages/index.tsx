@@ -38,9 +38,9 @@ const Home: NextPage = () => {
           <div className='text-sub-white text-6xl lg:text-7xl xl:text-8xl pt-4 lg:pt-6 font-medium '>
             Hi! I am<br/>
             <span className='text-white'>Abubakar<br/>
-            Ibrahim,<br/>
-            </span>
-            A Software<br/> Developer<br/>
+            Ibrahim</span>,<span className='hidden lg:inline'> I am <br/>a </span>
+            <span className='flex lg:hidden'> I am a</span>
+            Software<br/> Developer<br/>
           </div>
           <div className='text-white text-8xl font-medium '>
            <GlassCardBanner/>
