@@ -41,8 +41,8 @@ const Navbar = () => {
 
   return (
     <>
-    <div onClick={() => setShow(false)} className='w-full bg-grey z-40 fixed h-screen backdrop-filter transition-all backdrop-blur-sm bg-opacity-10' style={{display:(mobile && show) ? 'flex' : 'none'}}>
-    <div className='fixed w-72 -ml-72 bg-grey h-screen transition-all' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)', backdropFilter: 'blur(15px)'}}>
+    <div onClick={() => setShow(false)} className='w-full bg-grey z-40 delay-100 scroll-y-hidden fixed h-screen backdrop-filter -ml-1/1 transition-all backdrop-blur-sm bg-opacity-10' style={{transform:(mobile && show)  && 'translateX(100%)'}}>
+    <div className='fixed w-72 -ml-72 bg-grey h-screen transition-all delay-100' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)'}}>
       <div className=' text-white pt-6 px-2 pb-7 w-11/12  lg:pt-28 lg:py-7 lg:w-5/6 2xl:w-4/6 mx-auto grid grid-cols-1'>
           <div className='text-2xl font-medium lg:text-xl flex justify-between'>
             <div>Sadeeq.<span className='text-sub-white font-normal  '>dev</span></div>
