@@ -48,49 +48,49 @@ const Navbar = () => {
 
   return (
     <>
-    <div onClick={() => setShow(false)} className='w-full top-0 bg-grey z-40 delay-100 scroll-y-hidden fixed h-screen backdrop-filter -ml-1/1 transition-all backdrop-blur-sm bg-opacity-10' style={{transform:(mobile && show)  ? 'translateX(100%)' : ''}}>
-    <div className='fixed w-72 -ml-72 bg-grey h-screen transition-all delay-100' style={{zIndex:999, transform:(mobile && show)  ? 'translateX(288px)':  ''}}>
+    <div onClick={() => setShow(false)} className='w-full top-0 bg-grey z-40 delay-100 scroll-y-hidden fixed h-screen backdrop-filter -ml-1/1 transition-all backdrop-blur-sm bg-opacity-10' style={{transform:(mobile && show)  ? 'translateX(100%)' : '0'}}>
+    <div className='fixed w-72 -ml-72 bg-grey h-screen transition-all delay-100' style={{transform:(mobile && show)  ? 'translateX(288px)':  '0'}}>
       <div className=' text-white pt-6 px-2 pb-7 w-11/12  lg:pt-28 lg:py-7 lg:w-5/6 2xl:w-4/6 mx-auto grid grid-cols-1'>
           <div className='text-2xl font-medium lg:text-xl flex justify-between'>
             <div>Sadeeq.<span className='text-sub-white font-normal  '>dev</span></div>
             <button onClick={handleClose}>
-              <svg version="1.1" style={{width:'14px'}} id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.878 122.88" enable-background="new 0 0 122.878 122.88"><g><path fill='#AF0404' d="M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z"/></g></svg>
+              <svg version="1.1" style={{width:'14px'}} id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.878 122.88" enableBackground="new 0 0 122.878 122.88"><g><path fill='#AF0404' d="M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z"/></g></svg>
             </button>
           </div>
           <div className='font-medium grid text-xl gap-y-5 mt-10 text-left' onClick={() => setShow(false)}>
               <Link href="/home" className="hover:text-greentext" >
                 <div className='flex'>
-                  <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 326.85"><path fill="#AF0404" fill-rule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
+                  <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 326.85"><path fill="#AF0404" fillRule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
                   About
                 </div>
               </Link>
               <Link href="/tokenclaim" className="hover:text-greentext">
                 <div className='flex'>
-                  <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 326.85"><path fill="#AF0404" fill-rule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
+                  <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 326.85"><path fill="#AF0404" fillRule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
                   Services
                 </div>
               </Link>
               <Link href="/home" className="hover:text-greentext">
                 <div className='flex'>
-                  <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 326.85"><path fill="#AF0404" fill-rule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
+                  <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 326.85"><path fill="#AF0404" fillRule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
                   Tech Stacks
                 </div>
               </Link>
               <Link href="/home" className="hover:text-greentext">
                 <div className='flex'>
-                  <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 326.85"><path fill="#AF0404" fill-rule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
+                  <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 326.85"><path fill="#AF0404" fillRule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
                   Portfolio
                 </div>
               </Link>
               <a href="/home" className="hover:text-greentext">
                 <div className='flex'>
-                  <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 326.85"><path fill="#AF0404" fill-rule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
+                  <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 326.85"><path fill="#AF0404" fillRule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
                   Resume
                 </div>
               </a>
               <Link href="/home" className="hover:text-greentext">
                 <div className='flex'>
-                  <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 326.85"><path fill="#AF0404" fill-rule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
+                  <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 326.85"><path fill="#AF0404" fillRule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
                   Contact Me
                 </div>
               </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
       </div>
     </div>
     </div>
-     <div className='lg:border-b-1 border-sub-white bg-black h-15 lg:h-20 fixed w-full mt-0 z-30 top-0 flex items-center text-white ' style={{borderBottom:(mobile && scrolled) ? '1px solid #333' : ''}}>
+     <div className='lg:border-b-1 border-sub-white bg-black h-15 lg:h-20 w-full mt-0 z-30 top-0 flex items-center text-white ' style={{borderBottom:((mobile && scrolled ) || !mobile) ? '1px solid #333' : 'none', position:scrolled ? 'fixed' :'relative'}}>
         <div className='w-11/12 xl:w-5/6 2xl:w-3/5  mx-auto flex flex-row justify-between items-center'>
           <div className='text-2xl font-medium lg:text-xl'>
             Sadeeq.<span className='text-sub-white font-normal'>dev</span>
@@ -129,6 +129,9 @@ const Navbar = () => {
             </button>
             <button className='hover:text-white'>
               Portflio
+            </button>
+            <button className='hover:text-white'>
+              Resume
             </button>
             <button className='hover:text-white'>
               Contact
