@@ -42,10 +42,10 @@ const Home: NextPage = () => {
     .to(boxRef4.current, {duration: .5, text: "to reality", ease: "none"})
     .to(boxRef5.current, {duration: .5, text: "with ease!", ease: "none"})
 
-    let BoxTlMobile = gsap.timeline({repeat:-1, repeatDelay:2})
-    BoxTlMobile.to(boxRefMobile.current, {delay:.5, duration:2, text:"Hi! I am Abubakar Ibrahim, I am a Frontend Developer", ease:"none"})
-    .to(boxRefMobile.current, {delay:2, duration:2, text:"I develop Responsize, Scalable and reliable websites", ease:"none"})
-    .to(boxRefMobile.current, {delay:2, duration:2, text:"I can help you turn your ideas to reality with ease", ease:"none"})
+    let BoxTlMobile = gsap.timeline({repeat:-1, repeatDelay:0})
+    BoxTlMobile.to(boxRefMobile.current, {delay:0, duration:1.5, repeat:1, repeatDelay:2, yoyo:true, text:"Hi! I am Abubakar Ibrahim, I am a Frontend Developer", ease:"none"})
+    .to(boxRefMobile.current, {delay:0, duration:1.5, repeat:1, repeatDelay:2, yoyo:true, text:"I develop Responsive, Scalable and reliable websites", ease:"none"})
+    .to(boxRefMobile.current, {delay:0, duration:1.5,  repeat:1, repeatDelay:2, yoyo:true, text:"I can help you turn your ideas to reality with ease", ease:"none"})
   });
 
   return (
