@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
 import Navbar from '../components/Navbar';
+import TextPlugin from 'gsap/dist/TextPlugin';
 import GlassCardBanner from '../components/GlassCardBanner';
 import Footer from '../components/Footer';
 import Projects from '../components/Projects';
@@ -15,9 +16,30 @@ import Skills from '../components/Skills';
 
 const Home: NextPage = () => {
   const boxRef = useRef<HTMLDivElement>(null);
+  const boxRef1 = useRef<HTMLDivElement>(null);
+  const boxRef2 = useRef<HTMLDivElement>(null);
+  const boxRef3 = useRef<HTMLDivElement>(null);
+  const boxRef4 = useRef<HTMLDivElement>(null);
+  const boxRef5 = useRef<HTMLDivElement>(null);
+  gsap.registerPlugin(TextPlugin);
 
  useEffect(() => {
-    gsap.to(boxRef.current, { rotation: "+=360" });
+    let boxTl = gsap.timeline({repeat:-1, repeatDelay:2})
+    boxTl.to(boxRef1.current, {delay:.5, duration: .5, text: "Hi! I am", ease: "none"})
+    .to(boxRef2.current, {duration: .5, text: "Abubakar", ease: "none"})
+    .to(boxRef3.current, {duration: .5, text: "Ibrahim, I am", ease: "none"})
+    .to(boxRef4.current, {duration: .5, text: "a Frontend ", ease: "none"})
+    .to(boxRef5.current, {duration: .5, text: "Developer", ease: "none"})
+    .to(boxRef1.current, {delay:2, duration: .5, text: "I develop", ease: "none"})
+    .to(boxRef2.current, {duration: .5, text: "Responsive,", ease: "none"})
+    .to(boxRef3.current, {duration: .5, text: "Scalable,", ease: "none"})
+    .to(boxRef4.current, {duration: .5, text: "and Reliable ", ease: "none"})
+    .to(boxRef5.current, {duration: .5, text: "Websites!", ease: "none"})
+    .to(boxRef1.current, {delay:2, duration: .5, text: "I can help", ease: "none"})
+    .to(boxRef2.current, {duration: .5, text: "you turn", ease: "none"})
+    .to(boxRef3.current, {duration: .5, text: "your ideas", ease: "none"})
+    .to(boxRef4.current, {duration: .5, text: "into", ease: "none"})
+    .to(boxRef5.current, {duration: .5, text: "reality!", ease: "none"})
   });
 
   return (
@@ -35,12 +57,15 @@ const Home: NextPage = () => {
       {/* <!-----Welcome bar--------------------------------------------------------------------------------> */}
         
         <div className='w-11/12 lg:w-11/12 xl:w-5/6 2xl:w-3/5 mt-0 lg:mt-15 mx-auto lg:flex justify-between '>
-          <div className='text-sub-white text-7xl lg:text-7xl xl:text-8xl pt-4 lg:pt-6 font-medium '>
-            Hi! I am<br/>
-            <span className='text-white'>Abubakar<br/>
-            Ibrahim</span>,<span className='hidden lg:inline'> I am <br/>a </span>
-            <span className='flex lg:hidden'> I am a</span>
-            Software<br/> Developer<br/>
+          <div className='xl:w-4/6 h-110 lg:h-auto text-sub-white text-7xl lg:text-7xl xl:text-8xl pt-4 lg:pt-6 font-medium'>
+            <div ref={boxRef}>
+              <div ref={boxRef1}></div>
+              <div ref={boxRef2} className='text-white'> </div>
+              <div ref={boxRef3}></div>
+              <span className='flex lg:hidden'> </span>
+              <div ref={boxRef4}></div>
+              <div ref={boxRef5}></div>
+            </div>
           </div>
           <div className='text-white text-8xl font-medium '>
            <GlassCardBanner/>
