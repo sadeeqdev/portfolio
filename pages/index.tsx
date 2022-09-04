@@ -21,6 +21,7 @@ const Home: NextPage = () => {
   const boxRef3 = useRef<HTMLDivElement>(null);
   const boxRef4 = useRef<HTMLDivElement>(null);
   const boxRef5 = useRef<HTMLDivElement>(null);
+  const boxRefMobile = useRef<HTMLDivElement>(null);
   gsap.registerPlugin(TextPlugin);
 
  useEffect(() => {
@@ -38,8 +39,13 @@ const Home: NextPage = () => {
     .to(boxRef1.current, {delay:2, duration: .5, text: "I can help", ease: "none"})
     .to(boxRef2.current, {duration: .5, text: "you turn", ease: "none"})
     .to(boxRef3.current, {duration: .5, text: "your ideas", ease: "none"})
-    .to(boxRef4.current, {duration: .5, text: "into", ease: "none"})
-    .to(boxRef5.current, {duration: .5, text: "reality!", ease: "none"})
+    .to(boxRef4.current, {duration: .5, text: "to reality", ease: "none"})
+    .to(boxRef5.current, {duration: .5, text: "with ease!", ease: "none"})
+
+    let BoxTlMobile = gsap.timeline({repeat:-1, repeatDelay:2})
+    BoxTlMobile.to(boxRefMobile.current, {delay:.5, duration:2, text:"Hi! I am Abubakar Ibrahim, I am a Frontend Developer", ease:"none"})
+    .to(boxRefMobile.current, {delay:2, duration:2, text:"I develop Responsize, Scalable and reliable websites", ease:"none"})
+    .to(boxRefMobile.current, {delay:2, duration:2, text:"I can help you turn your ideas to reality with ease", ease:"none"})
   });
 
   return (
@@ -58,13 +64,16 @@ const Home: NextPage = () => {
         
         <div className='w-11/12 lg:w-11/12 xl:w-5/6 2xl:w-3/5 mt-0 lg:mt-15 mx-auto lg:flex justify-between '>
           <div className='xl:w-4/6 h-110 lg:h-auto text-sub-white text-7xl lg:text-7xl xl:text-8xl pt-4 lg:pt-6 font-medium'>
-            <div ref={boxRef}>
+            <div ref={boxRef} className="hidden lg:block">
               <div ref={boxRef1}></div>
               <div ref={boxRef2} className='text-white'> </div>
               <div ref={boxRef3}></div>
               <span className='flex lg:hidden'> </span>
               <div ref={boxRef4}></div>
               <div ref={boxRef5}></div>
+            </div>
+            <div className="flex lg:hidden text-white">
+              <div ref={boxRefMobile}></div>
             </div>
           </div>
           <div className='text-white text-8xl font-medium '>
