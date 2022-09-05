@@ -62,17 +62,7 @@ const Home: NextPage = () => {
  }
 
  function handleScroll(data:any){
-    if(data === "about"){
-      gsap.to(window, {duration: 1, scrollTo:"#about"});
-    }else if(data === "services"){
-      gsap.to(window, {duration: 1, scrollTo:"#services"});
-    }else if(data === "stacks"){
-      gsap.to(window, {duration: 1, scrollTo:"#stacks"});
-    }else if(data === "projects"){
-      gsap.to(window, {duration: 1, scrollTo:"#projects"});
-    }else if(data === "contact"){
-      gsap.to(window, {duration: 1, scrollTo:"#contact"});
-    }
+    gsap.to(window, {duration: 1, scrollTo:`#${data}`, offsetY: 150});
  }
   return (
     <div data-aos="fade-left">
