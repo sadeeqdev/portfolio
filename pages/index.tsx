@@ -103,7 +103,7 @@ const Home: NextPage = () => {
                 <div className='text-4xl pt-2' ref={boxRefMobile3}></div>
                 <div className='text-lg mt-2 font-light' ref={boxRefMobile4}>
                 </div>
-                <div className='border border-red rounded w-30 py-2 text-center mt-12 text-white text-xl opacity-0' ref={hireRef} onClick={() => handleScroll('contact')}>
+                <div className='border border-red rounded hover:opacity-70 w-30 py-2 text-center mt-12 text-white text-xl opacity-0' ref={hireRef} onClick={() => handleScroll('contact')}>
                   Hire me!
                 </div>
 
