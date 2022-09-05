@@ -1,7 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
+import { gsap } from "gsap";
+import ScrollToPlugin from 'gsap/dist/ScrollToPlugin';
 
 const Projects = () => {
+
+  gsap.registerPlugin(ScrollToPlugin);
+
+  function handleRightScroll(){
+    gsap.to("#", {duration: 1, scrollTo:{x:"500"}});
+  }
+
   return (
      <div className='border-t-1 border-sub-white my-30'>
         <div className='w-11/12 xl:w-5/6 2xl:w-3/5  mx-auto'>
@@ -10,7 +19,7 @@ const Projects = () => {
           </div>
         </div>
         <div className='noScrollBar text-white text-xl mt-4 flex justify-between' style={{width: '100%', height: 'auto', display: 'block', overflowX: 'auto', overflowY: 'auto'}}>
-          <div  className="noScrollBar flex space-x-5 ml-5 lg:ml-10 xl:ml-30 2xl:ml-95" style={{width: '3000px'}}>
+          <div id="rightScrollBar"  className="noScrollBar flex space-x-5 ml-5 lg:ml-10 xl:ml-30 2xl:ml-95" style={{width: '3000px'}}>
             <a href={'https://netporch.netlify.app'} target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="50">
               <div className='w-70 h-80 lg:(w-100 h-110) relative auto z-10 rounded-lg bg-grey mt-7 overflow-hidden transition-all' >
                   <div className='w-70 h-80 lg:(w-100 h-110) rounded-lg bg-grey transition-all p-5 z-40 flex justify-center items-center cursor-pointer'>
