@@ -53,7 +53,7 @@ const Navbar = (props:any) => {
     <div className='fixed w-72 -ml-72 bg-grey h-screen transition-all delay-100' style={{transform:(mobile && show)  ? 'translateX(288px)':  'translateX(0)'}}>
       <div className=' text-white pt-6 px-2 pb-7 w-11/12  lg:pt-28 lg:py-7 lg:w-5/6 2xl:w-4/6 mx-auto grid grid-cols-1'>
           <div className='text-2xl font-medium lg:text-xl flex justify-between'>
-            <div>Sadeeq.<span className='text-sub-white font-normal  '>dev</span></div>
+            <div>Sadeeq.<span className='text-sub-white font-normal text-red'>dev</span></div>
             <button onClick={handleClose}>
               <svg version="1.1" style={{width:'14px'}} id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.878 122.88" enableBackground="new 0 0 122.878 122.88"><g><path fill='#AF0404' d="M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z"/></g></svg>
             </button>
@@ -113,10 +113,10 @@ const Navbar = (props:any) => {
       </div>
     </div>
     </div>
-     <div className='lg:border-b-1 border-sub-white bg-black h-15 lg:h-20 w-full mt-0 z-30 top-0 flex items-center text-white ' style={{borderBottom:((mobile && scrolled ) || !mobile) ? '1px solid #333' : 'none', position:scrolled ? 'fixed' :'relative'}}>
+     <div className='lg:border-b-1 border-sub-white bg-black h-18 lg:h-20 w-full mt-0 z-30 top-0 flex items-center text-white ' style={{borderBottom:((mobile && scrolled ) || !mobile) ? '1px solid #333' : 'none', position:scrolled ? 'fixed' :'relative'}}>
         <div className='w-11/12 xl:w-5/6 2xl:w-3/5  mx-auto flex flex-row justify-between items-center'>
           <button className='text-2xl font-medium lg:text-xl' onClick={() => props.scrollTo("to")}>
-            Sadeeq.<span className='text-sub-white font-normal'>dev</span>
+            Sadeeq.<span className='text-sub-white font-normal text-maroon'>dev</span>
           </button>
           <div className='hidden lg:flex space-x-7 text-lg text-sub-white'>
             <button className='hover:text-white' onClick={() => props.scrollTo("about")}>
