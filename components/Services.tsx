@@ -17,7 +17,7 @@ const Services = () => {
                     Design
                   </div>
                   <div className='p-5 text-justify text-lg text-sub-white'>
-                    Great design has become a must-have in modern websites.
+                    Great design have become a must-have in modern websites.
                     It provides is better first impression to users.
                     This is the perfect place to have cripsy, responsive and 
                     pixel perfect web applications.
