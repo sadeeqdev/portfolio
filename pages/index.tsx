@@ -62,7 +62,7 @@ const Home: NextPage = () => {
  }
 
  function handleScroll(data:any){
-    gsap.to(window, {duration: 1, scrollTo:`#${data}`, offsetY: 150});
+    gsap.to(window, {duration: 1, scrollTo:{y:`#${data}`, offsetY: 80}});
  }
   return (
     <div data-aos="fade-left">
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
 
       {/* <!-----Welcome bar--------------------------------------------------------------------------------> */}
         
-        <div className='w-11/12 lg:w-11/12 xl:w-5/6 2xl:w-3/5 mt-0 lg:mt-15 mx-auto lg:flex justify-between '>
+        <div className='w-11/12 lg:w-11/12 xl:w-5/6 2xl:w-3/5 mt-0 lg:mt-15 mx-auto lg:flex justify-between ' id="top">
           <div className='xl:w-4/6 h-110 lg:h-auto text-sub-white text-7xl lg:text-7xl xl:text-8xl pt-4 lg:pt-6 font-medium'>
             <div ref={boxRef} className="hidden lg:block">
               <div ref={boxRef1}></div>
