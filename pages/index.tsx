@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { gsap } from "gsap";
 import Navbar from '../components/Navbar';
 import TextPlugin from 'gsap/dist/TextPlugin';
@@ -12,9 +12,11 @@ import Services from '../components/Services';
 import Contact from '../components/Contact';
 import About from '../components/About';
 import Skills from '../components/Skills';
+import AlertTab from '../components/AlertTab';
 
 
 const Home: NextPage = () => {
+  const [checkOpen, setCheckOpen] = useState(false)
   const boxRef = useRef<HTMLDivElement>(null);
   const boxRef1 = useRef<HTMLDivElement>(null);
   const boxRef2 = useRef<HTMLDivElement>(null);
@@ -48,6 +50,13 @@ const Home: NextPage = () => {
     .to(boxRefMobile.current, {delay:0, duration:1.5,  repeat:1, repeatDelay:2, yoyo:true, text:"I can help you turn your ideas to reality with ease", ease:"none"})
   });
 
+  function checkClose(data:any){
+    setCheckOpen(data)
+ }
+
+ function openBar(data:any){
+  setCheckOpen(data)
+ }
   return (
     <div data-aos="fade-left">
       <Head>
@@ -57,6 +66,7 @@ const Home: NextPage = () => {
       </Head>
 
       {/* <!-----Navbar-----------> -------------------------------------------------------------*/}
+     <AlertTab checkOpen={checkOpen} checkClose={checkClose}/>
 
      <Navbar/>
 
@@ -110,7 +120,7 @@ const Home: NextPage = () => {
       
       {/* <!-----Contact Me So Far--------------------------------------------------------------------------------> */}
 
-      <Contact/>
+      <Contact openBars={openBar}/>
 
       {/* <!-----Footer So Far--------------------------------------------------------------------------------> */}
 
