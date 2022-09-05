@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from "gsap";
+import ScrollToPlugin from 'gsap/dist/ScrollToPlugin';
 import Navbar from '../components/Navbar';
 import TextPlugin from 'gsap/dist/TextPlugin';
 import GlassCardBanner from '../components/GlassCardBanner';
@@ -24,7 +25,9 @@ const Home: NextPage = () => {
   const boxRef4 = useRef<HTMLDivElement>(null);
   const boxRef5 = useRef<HTMLDivElement>(null);
   const boxRefMobile = useRef<HTMLDivElement>(null);
+
   gsap.registerPlugin(TextPlugin);
+  gsap.registerPlugin(ScrollToPlugin);
 
  useEffect(() => {
     let boxTl = gsap.timeline({repeat:-1, repeatDelay:2})
@@ -57,6 +60,20 @@ const Home: NextPage = () => {
  function openBar(data:any){
   setCheckOpen(data)
  }
+
+ function handleScroll(data:any){
+    if(data === "about"){
+      gsap.to(window, {duration: 1, scrollTo:"#about"});
+    }else if(data === "services"){
+      gsap.to(window, {duration: 1, scrollTo:"#services"});
+    }else if(data === "stacks"){
+      gsap.to(window, {duration: 1, scrollTo:"#stacks"});
+    }else if(data === "projects"){
+      gsap.to(window, {duration: 1, scrollTo:"#projects"});
+    }else if(data === "contact"){
+      gsap.to(window, {duration: 1, scrollTo:"#contact"});
+    }
+ }
   return (
     <div data-aos="fade-left">
       <Head>
@@ -68,7 +85,7 @@ const Home: NextPage = () => {
       {/* <!-----Navbar-----------> -------------------------------------------------------------*/}
      <AlertTab checkOpen={checkOpen} checkClose={checkClose}/>
 
-     <Navbar/>
+     <Navbar scrollTo={handleScroll}/>
 
       {/* <!-----Welcome bar--------------------------------------------------------------------------------> */}
         
@@ -102,25 +119,29 @@ const Home: NextPage = () => {
       <Skills/>
 
       {/* <!-----Welcome bar--------------------------------------------------------------------------------> */}
-        
-      <About/>
+      <div id="about">
+        <About />
+      </div>
 
       {/* <!-----Services bar--------------------------------------------------------------------------------> */}
-      
-      <Services/>
+      <div id="services">
+        <Services/>
+      </div>
 
       {/* <!-----Tech Stacks bar--------------------------------------------------------------------------------> */}
-      
-     <TechStacks/>
+      <div id="stacks">
+        <TechStacks/>
+      </div>
 
       {/* <!-----Projects So Far--------------------------------------------------------------------------------> */}
-
-     <Projects/>
-
+      <div id="projects">
+        <Projects/>
+      </div>
       
       {/* <!-----Contact Me So Far--------------------------------------------------------------------------------> */}
-
-      <Contact openBars={openBar}/>
+      <div id="contact">
+        <Contact openBars={openBar}/>
+      </div>
 
       {/* <!-----Footer So Far--------------------------------------------------------------------------------> */}
 

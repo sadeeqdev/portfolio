@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
-const Navbar = () => {
+const Navbar = (props:any) => {
   const [show, setShow] = useState<boolean>(false);
   const [mobile, setMobile] = useState<boolean>(false)
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  const [scrollRef, setScrollRef] = useState<string>("")
     function handleShow(){
         setShow(!show)
     }
@@ -114,26 +115,26 @@ const Navbar = () => {
     </div>
      <div className='lg:border-b-1 border-sub-white bg-black h-15 lg:h-20 w-full mt-0 z-30 top-0 flex items-center text-white ' style={{borderBottom:((mobile && scrolled ) || !mobile) ? '1px solid #333' : 'none', position:scrolled ? 'fixed' :'relative'}}>
         <div className='w-11/12 xl:w-5/6 2xl:w-3/5  mx-auto flex flex-row justify-between items-center'>
-          <div className='text-2xl font-medium lg:text-xl'>
+          <button className='text-2xl font-medium lg:text-xl' onClick={() => props.scrollTo("to")}>
             Sadeeq.<span className='text-sub-white font-normal'>dev</span>
-          </div>
+          </button>
           <div className='hidden lg:flex space-x-7 text-lg text-sub-white'>
-            <button className='hover:text-white'>
+            <button className='hover:text-white' onClick={() => props.scrollTo("about")}>
               About
             </button>
-            <button className='hover:text-white'>
+            <button className='hover:text-white' onClick={() => props.scrollTo("services")}>
               Services
             </button>
-            <button className='hover:text-white'>
+            <button className='hover:text-white' onClick={() => props.scrollTo("stacks")}>
               Stacks
             </button>
-            <button className='hover:text-white'>
-              Portflio
+            <button className='hover:text-white' onClick={() => props.scrollTo("projects")}>
+              Projects
             </button>
             <a href='https://drive.google.com/file/d/18YPWVQrmLpP6aamqOIJ4sCdIwbgaMsSe/view?usp=sharing' target="_blank" rel='noreferrer' className='hover:text-white'>
               Resume
             </a >
-            <button className='hover:text-white'>
+            <button className='hover:text-white' onClick={() => props.scrollTo("contact")}>
               Contact
             </button>
             <a href='https://github.com/sadeeqdev' target="_blank" rel='noreferrer' className='hover:opacity-60'>
