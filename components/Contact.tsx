@@ -46,7 +46,7 @@ const Contact = (props:any) => {
                 Contact Me
             </div>
             <div className='text-white text-xl mt-10 lg:mt-20 flex flex-col lg:flex-row lg:space-x-15 justify-between'>
-                <div className='text-sub-white leading-normal text-3xl lg:(text-5xl leading-relaxed mt-5) xl:(text-6xl leading-normal mt-0)' data-aos="zoom-in" data-aos-delay="50">
+                <div className='text-sub-white leading-normal text-3xl lg:(text-5xl leading-relaxed mt-5) xl:(text-5xl leading-normal mt-0) 2xl:(text-6xl leading-normal mt-0)' data-aos="zoom-in" data-aos-delay="50">
                     Thanks for taking the time to reach out. How can I help you today?
                 </div>
                 <div className='lg:float-right lg:w-120 xl:w-150 mt-10 lg:mt-0' data-aos="fade-left" data-aos-delay="100"> 
