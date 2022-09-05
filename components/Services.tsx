@@ -38,10 +38,10 @@ const Services = () => {
               </div>
               <div className='w-full lg:h-110 xl:h-100 rounded-lg bg-grey mt-7 p-3 xl:p-5' data-aos="fade-up" data-aos-delay="200">
                 <div className='h-20 w-20 rounded-full bg-black flex justify-center items-center'>
-                    <Image src={`/assets/seo-icon.svg`} width="40px" height="50px" alt="bgasdw"/>
+                    <Image src={`/assets/maintenace.svg`} width="40px" height="50px" alt="bgasdw"/>
                 </div>
                 <div className='text-white ml-4 mt-5  text-3xl font-meduim'>
-                  Maintainance
+                  Maintenance
                 </div>
                 <div className='p-5 text-justify text-lg text-sub-white'>
                     Keeping a website up-to-date is crucial to ensuring it&apos;s 
@@ -53,9 +53,9 @@ const Services = () => {
           <div className='text-white text-xl mt-4 flex flex-col lg:flex-row justify-between lg:space-x-7 xl:space-x-10'>
             <div className='w-full lg:h-120 xl:h-115 rounded-lg bg-grey mt-7 p-3 xl:p-5' data-aos="fade-up" data-aos-delay="20">
                 <div className='h-20 w-20 rounded-full bg-black flex justify-center items-center'>
-                    <Image src={`/assets/design-icon.svg`} width="40px" height="50px" alt="bgasdw"/>
+                    <Image src={`/assets/documentation-1.svg`} width="40px" height="50px" alt="bgasdw"/>
                 </div>
-                  <div className='text-white ml-4 mt-5  text-3xl font-meduim'>
+                  <div className='text-white ml-4 mt-5 text-3xl font-meduim'>
                     Documentation
                   </div>
                   <div className='p-5 text-justify text-lg text-sub-white'>
@@ -80,7 +80,7 @@ const Services = () => {
               </div>
               <div className='w-full lg:h-120 xl:h-115 rounded-lg bg-grey mt-7 p-3 xl:p-5' data-aos="fade-up" data-aos-delay="100">
                 <div className='h-20 w-20 rounded-full bg-black flex justify-center items-center'>
-                    <Image src={`/assets/coding-icon.svg`} width="40px" height="50px" alt="bgasdw"/>
+                    <Image src={`/assets/mentor.svg`} width="40px" height="50px" alt="bgasdw"/>
                 </div>
                   <div className='text-white ml-4  mt-5 text-3xl font-meduim'>
                     Mentoring

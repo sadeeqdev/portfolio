@@ -19,7 +19,7 @@ const AlertTab = (props:any) => {
             <div className='h-100 w-120 bg-dark rounded '>
               <div className='flex p-5 justify-between'>
                 <p className='text-xl'></p>
-                <button className='text-red hover:text-subRed' onClick={handleClose}>Close</button>
+                <button className='text-red hover:text-subRed text-lg' onClick={handleClose}>Close</button>
               </div>
               <div className='text-white text-4xl mt-15 text-center items-center font-normal'>
                     <div>Thanks for sending a message. I will get back to you soon.</div>
