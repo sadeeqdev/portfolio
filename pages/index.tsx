@@ -55,8 +55,8 @@ const Home: NextPage = () => {
     BoxTlMobile.to(boxRefMobile1.current, {delay:0, duration:.5, text:"Hi! I am", ease:"none"})
     .to(boxRefMobile2.current, {delay:0, duration:.5, text:"Abubakar Ibrahim", ease:"none"})
     .to(boxRefMobile3.current, {delay:0, duration:.5,  text:"I build products for the web", ease:"none"})
-    .to(boxRefMobile4.current, {delay:0, duration:.5,  text:`I’m a software developer with 4+ years background specializing in creating
-    and executing innovative software solutions to enhance business productivity.`, ease:"none"})
+    .to(boxRefMobile4.current, {delay:0, duration:.5,  text:`I am a software developer with 4+ years background specializing in creating
+    and executing innovative software solutions to enhance business and productivity.`, ease:"none"})
     .to(hireRef.current, {delay:.51, duration:.6, opacity:1})
   });
 
@@ -106,6 +106,7 @@ const Home: NextPage = () => {
                 <div className='border border-red rounded w-30 py-2 text-center mt-12 text-white text-xl opacity-0' ref={hireRef} onClick={() => handleScroll('contact')}>
                   Hire me!
                 </div>
+
               </div>
             </div>
           </div>
