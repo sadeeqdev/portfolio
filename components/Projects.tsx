@@ -7,9 +7,9 @@ const Projects = () => {
 
   gsap.registerPlugin(ScrollToPlugin);
 
-  function handleRightScroll(){
-    gsap.to("#", {duration: 1, scrollTo:{x:"500"}});
-  }
+  // function handleRightScroll(){
+  //   gsap.to("#", {duration: 1, scrollTo:{x:"500"}});
+  // }
 
   return (
      <div className='border-t-1 border-sub-white my-30'>
@@ -36,7 +36,7 @@ const Projects = () => {
                   />                  
               </div>
             </a>
-            <a href={'https://orionapp.netlify.app'} target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="200">
+            <a href={'https://roadunnerapp.netlify.app'} target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="200">
               <div className='w-70 h-80 lg:(w-100 h-110) relative auto z-10 rounded-lg bg-grey mt-7 overflow-hidden transition-all' >
                   <div className='w-70 h-80 lg:(w-100 h-110) rounded-lg bg-grey transition-all p-5 z-40 flex justify-center items-center cursor-pointer'>
                     <button className='flex  items-center hover:(text-sub-white z-10 backdrop-filter bg-opacity-10 backdrop-blur-lg)'>
@@ -52,7 +52,7 @@ const Projects = () => {
                   />                  
               </div>
             </a>
-            <a href={'https://roadrunnerapp.netlify.app'} target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="350">
+            <a href={'https://orionapp.netlify.app'} target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="350">
               <div className='w-70 h-80 lg:(w-100 h-110) relative auto z-10 rounded-lg bg-grey mt-7 overflow-hidden transition-all' >
                   <div className='w-70 h-80 lg:(w-100 h-110) rounded-lg bg-grey transition-all p-5 z-40 flex justify-center items-center cursor-pointer'>
                     <button className='flex  items-center hover:(text-sub-white z-10 backdrop-filter bg-opacity-10 backdrop-blur-lg)'>
@@ -84,7 +84,7 @@ const Projects = () => {
                   />                  
               </div>
             </a>
-            <a href={'https://consulta.netlify.app'} target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="550">
+            <a href={'https://cosmestore.netlify.app'} target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="550">
               <div className='w-70 h-80 lg:(w-100 h-110) relative auto z-10 rounded-lg bg-grey mt-7 overflow-hidden transition-all' >
                   <div className='w-70 h-80 lg:(w-100 h-110) rounded-lg bg-grey transition-all p-5 z-40 flex justify-center items-center cursor-pointer'>
                     <button className='flex  items-center hover:(text-sub-white z-10 backdrop-filter bg-opacity-10 backdrop-blur-lg)'>
@@ -100,7 +100,7 @@ const Projects = () => {
                   />                  
               </div>
             </a>
-            <a href={'https://commiun.netlify.app'} target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="750">
+            <a href={'https://consulta.netlify.app'} target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="750">
               <div className='w-70 h-80 lg:(w-100 h-110) relative auto z-10 rounded-lg bg-grey mt-7 overflow-hidden transition-all' >
                   <div className='w-70 h-80 lg:(w-100 h-110) rounded-lg bg-grey transition-all p-5 z-40 flex justify-center items-center cursor-pointer'>
                     <button className='flex  items-center hover:(text-sub-white z-10 backdrop-filter bg-opacity-10 backdrop-blur-lg)'>
@@ -116,7 +116,7 @@ const Projects = () => {
                   />                  
               </div>
             </a>
-            <a href={'https://cosmestore.netlify.app'} target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="650">
+            <a href={'https://commiun.netlify.app'} target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="650">
               <div className='w-70 h-80 lg:(w-100 h-110) relative auto z-10 rounded-lg bg-grey mt-7 overflow-hidden transition-all' >
                   <div className='w-70 h-80 lg:(w-100 h-110) rounded-lg bg-grey transition-all p-5 z-40 flex justify-center items-center cursor-pointer'>
                     <button className='flex  items-center hover:(text-sub-white z-10 backdrop-filter bg-opacity-10 backdrop-blur-lg)'>
