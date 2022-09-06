@@ -52,10 +52,10 @@ const Home: NextPage = () => {
     .to(boxRef5.current, {duration: .5, text: "with ease!", ease: "none"})
 
     let BoxTlMobile = gsap.timeline({})
-    BoxTlMobile.to(boxRefMobile1.current, {delay:0, duration:.5, text:"Hi! I am", ease:"none"})
-    .to(boxRefMobile2.current, {delay:.3, duration:.5, text:"Abubakar Ibrahim", ease:"none"})
-    .to(boxRefMobile3.current, {delay:.3, duration:.5,  text:"I build products for the web", ease:"none"})
-    .to(boxRefMobile4.current, {delay:.3, duration:1.5,  text:`I am a software developer with 4+ years background specializing in creating
+    BoxTlMobile.to(boxRefMobile1.current, {delay:0, duration:.2, text:"Hi! I am", ease:"none"})
+    .to(boxRefMobile2.current, {delay:.1, duration:.3, text:"Abubakar Ibrahim", ease:"none"})
+    .to(boxRefMobile3.current, {delay:.1, duration:.3,  text:"I build products for the web", ease:"none"})
+    .to(boxRefMobile4.current, {delay:.1, duration:.8,  text:`I am a software developer with 4+ years background specializing in creating
     and executing innovative software solutions to enhance business and productivity.`, ease:"none"})
     .to(hireRef.current, {delay:.3, duration:.6, opacity:1})
   });
@@ -76,7 +76,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Abubakar Ibrahim</title>
         <meta name="Sadeeqdev" content="Abubakar Ibrahim" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       {/* <!-----Navbar-----------> -------------------------------------------------------------*/}
@@ -96,14 +96,14 @@ const Home: NextPage = () => {
               <div ref={boxRef4}></div>
               <div ref={boxRef5}></div>
             </div>
-            <div className="w-1/1 flex mx-auto flex text-2xl lg:hidden text-sub-white mt-7">
+            <div className="w-1/1 flex mx-auto flex text-2xl lg:hidden text-sub-white mt-14">
               <div>
                 <div ref={boxRefMobile1}></div>
                 <div className='text-4xl text-white pt-2' ref={boxRefMobile2}></div> 
                 <div className='text-4xl pt-2' ref={boxRefMobile3}></div>
                 <div className='text-lg mt-2 font-light' ref={boxRefMobile4}>
                 </div>
-                <div className='border border-red rounded hover:opacity-70 w-30 py-2 text-center mt-12 text-white text-xl opacity-0' ref={hireRef} onClick={() => handleScroll('contact')}>
+                <div className='border border-red rounded hover:opacity-70 w-30 py-2 text-center mt-8 text-white text-xl opacity-0' ref={hireRef} onClick={() => handleScroll('contact')}>
                   Hire me!
                 </div>
 
