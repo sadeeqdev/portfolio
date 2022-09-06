@@ -76,7 +76,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Abubakar Ibrahim</title>
         <meta name="Sadeeqdev" content="Abubakar Ibrahim" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       {/* <!-----Navbar-----------> -------------------------------------------------------------*/}
