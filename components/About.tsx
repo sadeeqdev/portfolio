@@ -16,7 +16,7 @@ const About = () => {
                 <Image src={`/assets/me.jpg`} width="350px" height="380px"  className="rounded-lg" alt="bgasdw"/>
             </div>
             <div className='text-xl lg:text-2xl w-1/1 lg:w-5/9 mt-6 lg:mt-0 lg:font-bold text-sub-white float-right text-justify'>
-                I am a seasoned software deveoper who has developed products for enterprise clients,
+                I am a seasoned software developer who has developed products for enterprise clients,
                  as well as many venture-backed businesses. 
                 I specialize in building applications specific to the business needs of my clients. 
                 I have done work in software development, mobile app creation, front-end/back-end web, 
