@@ -42,7 +42,7 @@ const Home: NextPage = () => {
     .to(boxRef5.current, {duration: .5, text: " for the web", ease: "none"})
     .to(boxRef1.current, {delay:2, duration: .5, text: "I develop", ease: "none"})
     .to(boxRef2.current, {duration: .5, text: "Responsive,", ease: "none"})
-    .to(boxRef3.current, {duration: .5, text: "Scalable,", ease: "none"})
+    .to(boxRef3.current, {duration: .5, text: "Scalable", ease: "none"})
     .to(boxRef4.current, {duration: .5, text: "and Reliable ", ease: "none"})
     .to(boxRef5.current, {duration: .5, text: "Websites!", ease: "none"})
     .to(boxRef1.current, {delay:2, duration: .5, text: "I can help", ease: "none"})
