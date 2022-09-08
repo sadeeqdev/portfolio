@@ -89,7 +89,7 @@ const Navbar = (props:any) => {
                   Contact Me
                 </div>
               </button>
-              <a href="/home" className="hover:text-greentext" >
+              <a href='/abubakar_ibrahim_resume.pdf' className="hover:text-greentext" >
                 <div className='flex'>
                   <svg style={{width:'15px', marginRight:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 326.85"><path fill="#AF0404" fillRule="nonzero" d="M307.56 301.51c.51 10.05 3.9 17.2 10.19 21.35 15.76 10.52 31.28-1.96 42.64-12.05L502.5 183.04c12.67-11.46 12.67-27.76 0-39.22L363.62 18.96c-11.9-10.69-28.78-26.39-45.87-14.99-6.29 4.17-9.68 11.33-10.19 21.38v76.31H6.33c-3.48 0-6.33 2.85-6.33 6.33v110.88c0 3.47 2.86 6.33 6.33 6.33h301.23v76.31z"/></svg>
                   Resume
@@ -134,7 +134,7 @@ const Navbar = (props:any) => {
             <button className='hover:text-white' onClick={() => props.scrollTo("contact")}>
               Contact
             </button>
-            <a href='https://drive.google.com/file/d/18YPWVQrmLpP6aamqOIJ4sCdIwbgaMsSe/view?usp=sharing' target="_blank" rel='noreferrer' className='hover:text-white'>
+            <a href='/abubakar_ibrahim_resume.pdf' target="_blank" rel='noreferrer' className='hover:text-white'>
               Resume
             </a >
             <a href='https://github.com/sadeeqdev' target="_blank" rel='noreferrer' className='hover:opacity-60'>
