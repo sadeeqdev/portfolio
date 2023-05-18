@@ -16,13 +16,14 @@ const About = () => {
                 <Image src={`/assets/me.jpg`} width="350px" height="380px"  className="rounded-lg" alt="bgasdw"/>
             </div>
             <div className='text-xl lg:text-2xl w-1/1 lg:w-5/9 mt-6 lg:mt-0 lg:font-bold text-sub-white float-right text-justify'>
-                I am a seasoned software developer who has developed products for enterprise clients,
-                 as well as many venture-backed businesses. 
-                I specialize in building applications specific to the business needs of my clients. 
-                I have done work in software development, mobile app creation, front-end/back-end web, 
-                database/server management and graphic design.
-                I am proficienct in Technologies such as Javascript, Typescript, React JS, Vue JS Node JS and C#.
-                With over 4 years in commercial application and software development, I can be relied upon to achieve your goals.
+              I have over 4 years of experience as a skilled software developer, 
+              creating products for enterprise clients and venture-backed businesses. 
+              My expertise lies in developing custom applications tailored to meet the 
+              unique requirements of each client. I have a diverse skill set encompassing s
+              oftware development, mobile app creation, front-end and back-end web development, 
+              database and server management, as well as graphic design. I am proficient in 
+              various technologies including JavaScript, TypeScript, ReactJS, VueJS, NodeJS, and 
+              C#. You can trust me to deliver results and help you accomplish your objectives.
             </div>
           </div>
           <div className='flex flex-col lg:flex-row h-auto lg:h-45 w-full mx-auto bg-grey mt-15 rounded text-white flex lg:justify-between lg:items-center lg:space-x-20 p-5' data-aos="fade-up">
